@@ -10,7 +10,7 @@ function Timer() {
 
   useEffect(() => {
     const interval = setInterval(() => tick(), 1000);
-    clearInterval(interval);
+    return () => clearInterval(interval);
   }, []);
 
     return (
