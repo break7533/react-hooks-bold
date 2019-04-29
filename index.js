@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
+import Timer from './Timer';
 import './style.css';
 
 class App extends Component {
@@ -23,4 +23,4 @@ class App extends Component {
   }
 }
 
-render(<App />, document.getElementById('root'));
+render(<Timer />, document.getElementById('root'));
