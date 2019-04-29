@@ -5,7 +5,7 @@ function Timer() {
   const [seconds, setSeconds] = useState(0);
 
   const tick = () => {
-    useState(seconds + 1);
+    setSeconds(seconds + 1);
   }
 
   useEffect(() => {
