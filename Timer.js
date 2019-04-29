@@ -4,13 +4,14 @@ import React, { useEffect,useState } from 'react';
 function Timer() {
   const [seconds, setSeconds] = useState(0);
 
+  useEffect(() => {
+
   const tick = () => {
-    setSeconds(seconds + 1);
+    setSeconds(sec => sec + 1);
   }
 
-  useEffect(() => {
-    const interval = setInterval(() => tick(), 1000);
-    return () => clearInterval(interval);
+  const interval = setInterval(() => tick(), 1000);
+  return () => clearInterval(interval);
   }, []);
 
     return (
