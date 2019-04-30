@@ -1,3 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { context } from './Context'
 
-export default ({ name }) => <h1>Hello {name}!</h1>;
+export default () => {
+  const value = useContext(context);
+  return (
+    <h1>Hello {value.name}!</h1>
+  );
+}
