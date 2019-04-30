@@ -6,6 +6,7 @@ import ToDo from './ToDo';
 import {Provider} from './Context';
 import Multiply from './Multiply';
 import TextInputWithFocusButton from './UseRef';
+import CustomTimer from './CustomTimer';
 
 const App = () => (
     <div>
@@ -32,5 +33,6 @@ function Example() {
 //render((<Provider value={{name: 'nome'}}><App /></Provider>),
 //  document.getElementById('root'));
 //render(<Multiply initialState= {{count:1}} />, document.getElementById('root'));
-render(<TextInputWithFocusButton />, document.getElementById('root'));
+//render(<TextInputWithFocusButton />, document.getElementById('root'));
+render(<CustomTimer />, document.getElementById('root'));
 
