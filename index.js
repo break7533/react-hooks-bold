@@ -30,7 +30,7 @@ function Example() {
 //render(<Example />, document.getElementById('root'));
 //render(<Timer />, document.getElementById('root'));
 //render(<ToDo />, document.getElementById('root'));
-//render((<Provider value={{name: 'nome'}}><App /></Provider>),
+//render((<Provider value={{name: 'Cris'}}><App /></Provider>),
 //  document.getElementById('root'));
 //render(<Multiply initialState= {{count:1}} />, document.getElementById('root'));
 //render(<TextInputWithFocusButton />, document.getElementById('root'));
