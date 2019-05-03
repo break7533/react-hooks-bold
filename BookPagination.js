@@ -7,7 +7,9 @@ function BookPagination() {
   const [page, setPage] = useState(1);
 
   const changePage = (direction) => {
-    setPage(page+direction);
+    if(page>0){
+      setPage(page+direction);
+    }
   }
 
   useEffect(() => {
